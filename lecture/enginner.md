@@ -17,7 +17,7 @@ Git(ギット)は、バージョンを管理するツールです。バージョ
 
 ファイルをコピーして別の名前を付けて保存することも、バージョンを管理する方法のひとつです。
 
-![ファイルをコピーして別の名前を付けて保存する例の画像](./img/version_control.png)
+<img art="ファイルをコピーして別の名前を付けて保存する例の画像" src="./img/version_control.png" width="500">
 
 Gitは、バージョンの管理をもっとやりやすいように工夫したツールです。
 
@@ -26,7 +26,7 @@ GitとGitHubは名前が似ていますが、Gitはバージョン管理ツー�
 
 GitHubは、Gitで管理したソースコードをオンライン上にホスティングして、複数の開発者で共有できるようにしたサービスです。
 
-![リポジトリの画像](./img/repository.png)
+<img art="リポジトリの画像" src="./img/repository.png" width="500">
 
 # GitとGitHubを活用したチーム開発
 わたしたちは、GitとGitHubを活用して開発をおこなっています。チーム開発のざっくりとした流れをみていきましょう。
@@ -39,8 +39,6 @@ GitHubは、Gitで管理したソースコードをオンライン上にホス�
 ### Branch
 複数の人が並行して開発をおこなうために、GitにはBranch(ブランチ)という機能があります。ブランチは、大まかに「mainブランチ」とそれ以外に分けられます。mainブランチはmasterブランチと呼ばれることもあります。
 
-わたしたちは、本番のmainブランチに影響を与えないように、新しいブランチを切ってから、ソースコードに変更を加えるようにしています。
-
 ### Commit
 ソースコードへの変更は、Commit(コミット)にまとめます。
 
@@ -48,17 +46,33 @@ GitHubは、Gitで管理したソースコードをオンライン上にホス�
 
 コミットを小さくするように心がけると、見返した時に作業内容がわかりやすくなりますし、バージョン管理の恩恵が受けられます。
 
+変更を加えるときは、本番のmainブランチに影響を与えないように、新しい**ブランチ**を切ります。ソースコードに変更を加えたら、差分を**コミット**します。
+
+<img art="ブランチの画像" src="./img/branch.png" width="500">
+
+これは、lectureブランチを切ってコミットを積んだときの図です。丸が一つのコミットを表しています。
+
 ## 2. 変更を提案する
 ### Pull Request
 「1. 変更を加える」での変更を、Pull Request(プルリクエスト)で提案します。
 
+<img art="Pull Requestの画像" src="./img/pull_request.png" width="500">
+
 Files changedから差分を確認できます。
+
+<img art="Files changedの画像" src="./img/files_changed.png" width="500">
 
 [GitHub Actions](https://github.co.jp/features/actions)を活用してテストを実行したり、Pull Requestのコメント機能を活用してコードレビューを行ったりもします。
 
 ## 3. 変更を取り込む
 ### Merge
-Pull Requestに問題がなさそうと合意が取れたら、変更をMerge(マージ)して、mainブランチに取り込みます。
+Pull Requestに問題がなさそうと合意が取れたら、変更をMerge(マージ)して、mainブランチに取り込みます。Pull Requestの下にマージボタンがあります。
+
+<img art="Pull Requestの画像" src="./img/pull_request.png" width="500">
+
+Pull Requestがマージされた状態は下記になります。lectureブランチの矢印がmainに向いており、mainブランチに差分が取り込まれたことを示しています。
+
+<img art="マージ後の状態の画像" src="./img/merged.png" width="500">
 
 ## まとめ
 チーム開発では、「変更を加える」「変更を提案する」「変更を取り込む」を何度も繰り返して、成果物を形作っています。
