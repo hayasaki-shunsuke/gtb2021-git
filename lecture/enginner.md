@@ -19,7 +19,7 @@ Git(ギット)は、**バージョンを管理**するツールです。バー�
 
 ファイルをコピーして別の名前を付けて保存することも、バージョンを管理する方法のひとつです。
 
-<img art="ファイルをコピーして別の名前を付けて保存する例の画像" src="./img/version_control.png" width="500">
+<img art="ファイルをコピーして別の名前を付けて保存する例の画像" src="./img/version_control.png" width="1000">
 
 Gitは、バージョンの管理をもっとやりやすいように工夫したツールです。
 
@@ -28,7 +28,7 @@ GitとGitHubは名前が似ていますが、Gitはバージョン管理ツー�
 
 GitHubは、Gitで管理したソースコードをオンライン上にホスティングして、複数の開発者で共有できるようにしたサービスです。
 
-<img art="リポジトリの画像" src="./img/repository.png" width="500">
+<img art="リポジトリの画像" src="./img/repository.png" width="1000">
 
 # GitとGitHubを活用したチーム開発
 わたしたちは、GitとGitHubを活用して開発をおこなっています。開発の工程を大まかに3つにわけてみます。
@@ -50,7 +50,7 @@ GitHubは、Gitで管理したソースコードをオンライン上にホス�
 
 変更を加えるときは、本番のmainブランチに影響を与えないように、新しい**ブランチ**を切ります。ソースコードに変更を加えたら、差分を**コミット**します。
 
-<img art="ブランチの画像" src="./img/branch.png" width="500">
+<img art="ブランチの画像" src="./img/branch.png" width="1000">
 
 これは、lectureブランチを切ってコミットを積んだときの図です。丸が一つのコミットを表しています。
 
@@ -58,11 +58,11 @@ GitHubは、Gitで管理したソースコードをオンライン上にホス�
 ### Pull Request
 GitHubにPull Request(プルリクエスト)を作成して、「1. 変更を加える」での作業を提案します。
 
-<img art="Pull Requestの画像" src="./img/pull_request.png" width="500">
+<img art="Pull Requestの画像" src="./img/pull_request.png" width="1000">
 
 Files changedから差分を確認できます。
 
-<img art="Files changedの画像" src="./img/files_changed.png" width="500">
+<img art="Files changedの画像" src="./img/files_changed.png" width="1000">
 
 [GitHub Actions](https://github.co.jp/features/actions)等のツールを活用してテストを実行したり、Pull Requestのコメント機能を活用してコードレビューを行ったりもします。
 
@@ -70,11 +70,11 @@ Files changedから差分を確認できます。
 ### Merge
 Pull Requestに問題がなさそうと合意が取れたら、変更をMerge(マージ)して、mainブランチに取り込みます。Pull Requestの下にマージボタンがあります。
 
-<img art="Pull Requestの画像" src="./img/pull_request.png" width="500">
+<img art="Pull Requestの画像" src="./img/pull_request.png" width="1000">
 
 Pull Requestがマージされた状態は下記になります。lectureブランチの矢印がmainに向いており、mainブランチに差分が取り込まれたことを示しています。
 
-<img art="マージ後の状態の画像" src="./img/merged.png" width="500">
+<img art="マージ後の状態の画像" src="./img/merged.png" width="1000">
 
 ## まとめ
 チーム開発では、「**変更を加える**」「**変更を提案する**」「**変更を取り込む**」を何度も繰り返して成果物を形作っています。そのためにGitやGitHubの機能を活用しています。
