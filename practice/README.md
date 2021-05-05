@@ -3,7 +3,7 @@
 ## gitのインストールからPull Request作成まで
 - gitをインストールし、github.com にssh接続できるようになる
 - 「hayasaki-shunsuke(自分のアカウント)/github-test」を作成する
-- 「hayapi(自分のアカウント).md」を作成するPull Requestを作成する
+- 「hayapi(自分のアカウント).md」を追加するPull Requestを作成する
 
 # 手順
 
@@ -14,7 +14,7 @@
 - [https://code.visualstudio.com/](https://code.visualstudio.com/)
 ## [github.com](http://github.com) のアカウントを作成します。
 - [https://github.com/](https://github.com/)
-## [github.com](http://github.com) にSSHできるようにする
+## [github.com](http://github.com) にSSH接続できるようにする
 - 公開鍵を作って、github.com に登録する
 - 参考記事：[https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3](https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3)
 ```bash
@@ -67,8 +67,8 @@ config		id_git_rsa	id_git_rsa.pub	id_rsa		id_rsa.pub
     - VSCode を使用する場合、`code  ~/.ssh/config` を実行しファイルを新規作成
     ```
     Host *
-    AddKeysToAgent yes
-    UseKeychain yes
+        AddKeysToAgent yes
+        UseKeychain yes
 
     Host github github.com
         HostName github.com
@@ -114,6 +114,8 @@ Identity added: /Users/hayasaki-shunsuke/.ssh/id_git_rsa (hayasaki-shunsuke@PMAC
 
 ## 公開鍵をコピーする
 [hayasaki-shunsuke@PMAC873S] ~/.ssh
+## (Mac)pbcopy < ~/.ssh/id_git_rsa.pub クリップボードにコピー
+## (Windows)clip < ~/.ssh/id_git_rsa.pub クリップボードにコピー
 % pbcopy < ~/.ssh/id_git_rsa.pub
 [hayasaki-shunsuke@PMAC873S] ~/.ssh
 ``` 
@@ -146,6 +148,10 @@ Hi hayasaki-shunsuke! You've successfully authenticated, but GitHub does not pro
     ## ディレクトリ名を表示
     % pwd
     /Users/hayasaki-shunsuke
+
+    ## mkdir Desktop/src ディレクトリを作成
+    [hayasaki-shunsuke@PMAC873S] ~
+    % mkdir Desktop/src
 
     ## Desktop/src に移動
     [hayasaki-shunsuke@PMAC873S] ~
@@ -253,6 +259,7 @@ nothing to commit, working tree clean
 - git push
 ```bash
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (hayapi)
+## git push コミットした内容をpushする
 % git push
 fatal: The current branch hayapi has no upstream branch.
 To push the current branch and set the remote as upstream, use
@@ -260,6 +267,8 @@ To push the current branch and set the remote as upstream, use
 git push --set-upstream origin hayapi
 
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (hayapi)
+## `--set-upstream origin hayapi` を指定してhayapi ブランチをプッシュする
+## 参考資料:https://qiita.com/ponsuke0531/items/410735b544795506fdc5
 % git push --set-upstream origin hayapi
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
