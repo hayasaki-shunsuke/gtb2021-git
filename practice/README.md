@@ -17,6 +17,12 @@
 ## [github.com](http://github.com) にSSH接続できるようにする
 - 公開鍵を作って、github.com に登録する
 - 参考記事：[https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3](https://qiita.com/unsoluble_sugar/items/14bea376d8e6fce82eb3)
+
+- Windowsの場合「Git Bash」
+![image](https://user-images.githubusercontent.com/48468109/117159359-2be8b680-adfb-11eb-931e-3eca1144d625.png)
+- Macの場合「ターミナル」 
+![image](https://user-images.githubusercontent.com/48468109/117159265-18d5e680-adfb-11eb-9637-1b5cf279c8a5.png)
+
 ```bash
 ## ~/.ssh がない場合はディレクトリを作成する
 [hayasaki-shunsuke@PMAC873S] ~
