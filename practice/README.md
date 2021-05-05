@@ -181,6 +181,7 @@ Hi hayasaki-shunsuke! You've successfully authenticated, but GitHub does not pro
     ```
 ## ブランチを作成する
 - git branch hayapi
+- git checkout hayapi
 ```bash
 ## branch を作成する
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (main)
@@ -202,6 +203,8 @@ Switched to branch 'hayapi'
 main
 ```
 ## ファイルを編集する
+- touch hayapi.md
+- code hayapi.md (hayapi.md をVSCodeで開く)
 ```bash
 ## ファイル確認
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (hayapi)
@@ -217,12 +220,13 @@ README.md	hayapi.md
 ```
 ```bash
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (hayapi)
-% vi hayapi.md
+% code hayapi.md
 
 ## hayapi
 - hayapiのテストファイルです。
 ```
 ## コミットする
+- git add hayapi.md
 ```bash
 ## git status ファイルの変更状況を確認
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (hayapi)
@@ -246,7 +250,7 @@ Changes to be committed:
 (use "git restore --staged <file>..." to unstage)
 new file:   hayapi.md
 ```
-- git commit
+- git commit -m "hayapi.mdを追加"
 ```bash
 ## git commit ファイルの変更をコメント付きでコミットする
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (hayapi) <S>
@@ -262,7 +266,7 @@ On branch hayapi
 nothing to commit, working tree clean
 ```
 ## プッシュする
-- git push
+- git push --set-upstream origin hayapi
 ```bash
 [hayasaki-shunsuke@PMAC873S] ~/Desktop/src/github-test (hayapi)
 ## git push コミットした内容をpushする
