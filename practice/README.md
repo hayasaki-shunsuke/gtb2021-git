@@ -110,8 +110,8 @@ Agent pid 85934
 
 ## ssh-agentに秘密鍵を登録
 [hayasaki-shunsuke@PMAC873S] ~/.ssh
-% ssh-add ~/.ssh/id_rsa
-Enter passphrase for /Users/hayasaki-shunsuke/.ssh/id_rsa:
+% ssh-add ~/.ssh/id_git_rsa
+Enter passphrase for /Users/hayasaki-shunsuke/.ssh/id_git_rsa:
 
 [hayasaki-shunsuke@PMAC873S] ~/.ssh
 % ssh-add ~/.ssh/id_git_rsa
