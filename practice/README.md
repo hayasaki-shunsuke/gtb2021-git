@@ -84,11 +84,7 @@ config		id_git_rsa	id_git_rsa.pub	id_rsa		id_rsa.pub
     [hayasaki-shunsuke@PMAC873S] ~
     ## vim ~/.ssh/config ファイルの内容を確認
     % vim ~/.ssh/config
-
-    Host *
-        AddKeysToAgent yes
-        UseKeychain yes
-
+    
     Host github github.com
         HostName github.com
         IdentityFile ~/.ssh/id_git_rsa
