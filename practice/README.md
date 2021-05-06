@@ -72,10 +72,6 @@ config		id_git_rsa	id_git_rsa.pub	id_rsa		id_rsa.pub
 - ~/.ssh/config ssh接続設定を記述するファイルを作成する
     - VSCode を使用する場合、`code  ~/.ssh/config` を実行しファイルを新規作成
     ```
-    Host *
-        AddKeysToAgent yes
-        UseKeychain yes
-
     Host github github.com
         HostName github.com
         IdentityFile ~/.ssh/id_git_rsa
