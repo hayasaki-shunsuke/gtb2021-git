@@ -30,13 +30,13 @@
 
 ![image](https://user-images.githubusercontent.com/48468109/117793494-3ede0980-b287-11eb-8e7c-0775367df5d2.png)
 
-- 「hayapi(自分のアカウント名).md」を記入
-- ファイルの中身を記述
+- ファイル名「hayapi(自分のアカウント名).md」を作成
+- ファイルの中身を記入
 ```md
 ## hayapi
 hayapiのテストファイルです。
 ```
-- コメントを記載
+- コメントを記入
 ```text
 hayapi.md を新規作成
 ```
