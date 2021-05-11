@@ -16,7 +16,7 @@
 
 ## 新規ブランチを作成する
 - https://github.com/hayasaki-shunsuke/github-test
-- 「hayapi(自分の名前)」ブランチを新規作成
+- 「hayapi(自分のアカウント名)」ブランチを新規作成
 ![image](https://user-images.githubusercontent.com/48468109/117792978-bfe8d100-b286-11eb-96af-5ade5a08224d.png)
 
 ![image](https://user-images.githubusercontent.com/48468109/117793100-e0b12680-b286-11eb-93e3-741ae7fd27e5.png)
@@ -55,9 +55,12 @@ hayapi.md を新規作成
 
 ![image](https://user-images.githubusercontent.com/48468109/117794863-98930380-b288-11eb-86da-354a827693ed.png)
 
-- [https://github.com/hayasaki-shunsuke/github-test/pulls](https://github.com/hayasaki-shunsuke/github-test/pulls)
-![image](https://user-images.githubusercontent.com/48468109/116080600-41abfc80-a6d4-11eb-8575-7b1d9663fb69.png)
+- https://github.com/hayasaki-shunsuke/github-test/compare/hayapi?expand=1
+- Pull Request のタイトルとコメントを記述して`Create pull request` をクリックする
+
 ![image](https://user-images.githubusercontent.com/48468109/116080618-47094700-a6d4-11eb-9c20-933207e8faba.png)
+
+
 - [https://github.com/hayasaki-shunsuke/github-test/pulls](https://github.com/hayasaki-shunsuke/github-test/pulls)
 ![image](https://user-images.githubusercontent.com/48468109/116080659-4ffa1880-a6d4-11eb-93a6-cbd12f10eec1.png)
 ![image](https://user-images.githubusercontent.com/48468109/116080673-54263600-a6d4-11eb-81d0-f10afc87bb60.png)
